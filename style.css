@@ -19,6 +19,9 @@
   --jet:"JetBrains Mono", ui-monospace, monospace;
   --display:"Orbitron", sans-serif;
 }
+html[lang="ru"]{
+  --display:"Jura", sans-serif;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
@@ -139,14 +142,22 @@ body{
 }
 @media (max-width: 480px) {
   .topbar {
-    gap: 8px;
-    padding: 8px 12px;
+    gap: 6px;
+    padding: 8px 10px;
   }
   .topbar .os {
     font-size: 11px;
   }
   .topbar #clock {
     display: none;
+  }
+  .scan-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  .lang-btn {
+    padding: 4px 6px;
+    font-size: 9px;
   }
 }
 
@@ -188,6 +199,16 @@ body{
 /* ---------- identity widget ---------- */
 .id-panel{padding:26px 28px}
 .id-top{display:flex;gap:24px;align-items:flex-start}
+@media (max-width: 560px) {
+  .id-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .id-main {
+    width: 100%;
+  }
+}
 .avatar{
   width:104px;height:104px;flex:none;position:relative;
   display:grid;place-items:center;
