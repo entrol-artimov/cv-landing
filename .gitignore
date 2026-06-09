@@ -1,0 +1,17 @@
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon
+
+# Thumbnails
+._*
+
+# Files that might be created by macOS Finder
+.DocumentRevisions-V100
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
