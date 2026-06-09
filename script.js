@@ -180,6 +180,9 @@ async function setLanguage(lang) {
     const key = el.dataset.i18n;
     if (translations[key] !== undefined) {
       el.textContent = translations[key];
+      if (el.dataset.text !== undefined) {
+        el.dataset.text = translations[key];
+      }
     }
   });
   
