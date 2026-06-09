@@ -17,10 +17,9 @@
   --glow:0 0 18px rgba(45,226,255,0.28);
   --mono:"Share Tech Mono", ui-monospace, monospace;
   --jet:"JetBrains Mono", ui-monospace, monospace;
-  --display:"Orbitron", sans-serif;
+  --display:"Tektur", sans-serif;
 }
 html[lang="ru"]{
-  --display:"JetBrains Mono", monospace;
   --mono:"JetBrains Mono", monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
