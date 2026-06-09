@@ -96,6 +96,41 @@ body{
 .scan-btn:hover{background:rgba(45,226,255,0.16);color:var(--cyan-bright);box-shadow:var(--glow)}
 .scan-btn .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
 
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  background: rgba(8, 12, 18, 0.45);
+  padding: 2px;
+  clip-path: polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px);
+  gap: 2px;
+}
+.lang-btn {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  clip-path: polygon(3px 0, 100% 0, 100% calc(100% - 3px), calc(100% - 3px) 100%, 0 100%, 0 3px);
+}
+.lang-btn:hover {
+  color: var(--cyan);
+}
+.lang-btn.active {
+  background: rgba(45, 226, 255, 0.16);
+  color: var(--cyan-bright);
+  font-weight: bold;
+  text-shadow: var(--glow);
+}
+
+@media (max-width: 800px) {
+  .topbar .crumb, .topbar .stat {
+    display: none;
+  }
+}
+
 /* ---------- panels ---------- */
 .panel{
   position:relative;

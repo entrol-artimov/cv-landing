@@ -22,22 +22,27 @@
 <div id="boot">
   <div class="boot-inner">
     <div class="boot-logo">ARTEM_MAZUR.SYS</div>
-    <div class="boot-sub">FULL-STACK DEVELOPER CONSOLE // v2.4.1</div>
+    <div class="boot-sub" data-i18n="boot_sub">FULL-STACK DEVELOPER CONSOLE // v2.4.1</div>
     <div id="bootlog"></div>
     <div class="boot-prog"><div class="pf" id="bootpf"></div></div>
-    <div class="boot-skip" id="bootskip">PRESS [ESC] TO SKIP ▸</div>
+    <div class="boot-skip" id="bootskip" data-i18n="boot_skip">PRESS [ESC] TO SKIP ▸</div>
   </div>
 </div>
 
 <!-- ============ TOP STATUS BAR ============ -->
 <div class="topbar">
   <span class="os">◈ PORTFOLIO_OS</span>
-  <span class="crumb">/ profile / <b>artem_mazur</b> / full-stack</span>
+  <span class="crumb" data-i18n-html="topbar_crumb">/ profile / <b>artem_mazur</b> / full-stack</span>
   <span class="spacer"></span>
-  <span class="stat">SYS <span class="on">● ONLINE</span></span>
-  <span class="stat">CHIȘINĂU</span>
+  <span class="stat" data-i18n-html="topbar_sys">SYS <span class="on">● ONLINE</span></span>
+  <span class="stat" data-i18n="topbar_location">CHIȘINĂU</span>
   <span id="clock">--:--:--</span>
-  <button class="scan-btn" id="scanBtn"><span class="dot"></span>SCAN</button>
+  <button class="scan-btn" id="scanBtn"><span class="dot"></span><span data-i18n="scan_btn">SCAN</span></button>
+  <div class="lang-switch">
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+    <button class="lang-btn" data-lang="ro">RO</button>
+  </div>
 </div>
 
 <div class="shell">
@@ -51,34 +56,34 @@
           <div class="mono-id">AM</div>
         </div>
         <div class="id-main">
-          <div class="kicker">// IDENTITY_MODULE — UID 479789</div>
+          <div class="kicker" data-i18n="id_kicker">// IDENTITY_MODULE — UID 479789</div>
           <h1 class="id-name"><span class="glitch" data-text="ARTEM MAZUR">ARTEM MAZUR</span></h1>
-          <div class="id-role">Full-Stack Developer</div>
+          <div class="id-role" data-i18n="id_role">Full-Stack Developer</div>
           <div class="badge-row">
-            <span class="badge live"><span class="pulse"></span>STATUS: ACTIVE — READY FOR DEPLOYMENT</span>
-            <span class="badge"><span class="b-k">AGE</span><span class="b-v">29</span></span>
-            <span class="badge"><span class="b-k">LICENSE</span><span class="b-v">CAT.B + AUTO</span></span>
-            <span class="badge"><span class="b-k">MODE</span><span class="b-v">REMOTE / HYBRID / ONSITE</span></span>
+            <span class="badge live"><span class="pulse"></span><span data-i18n="badge_status">STATUS: ACTIVE — READY FOR DEPLOYMENT</span></span>
+            <span class="badge"><span class="b-k" data-i18n="badge_age">AGE</span><span class="b-v">29</span></span>
+            <span class="badge"><span class="b-k" data-i18n="badge_license">LICENSE</span><span class="b-v">CAT.B + AUTO</span></span>
+            <span class="badge"><span class="b-k" data-i18n="badge_mode">MODE</span><span class="b-v" data-i18n="badge_mode_val">REMOTE / HYBRID</span></span>
           </div>
         </div>
       </div>
     </div>
 
     <div class="panel contact">
-      <div class="panel-head"><span class="tag">▣</span> COMMS_LINK <span class="hline"></span><span class="idx">[3]</span></div>
+      <div class="panel-head" data-i18n-html="comms_title"><span class="tag">▣</span> COMMS_LINK <span class="hline"></span><span class="idx">[3]</span></div>
       <a class="packet" href="mailto:entrol.artimov@gmail.com" style="text-decoration:none">
         <span class="ico">@</span>
-        <span class="meta"><span class="k">EMAIL</span><span class="v">entrol.artimov@gmail.com</span></span>
+        <span class="meta"><span class="k" data-i18n="comms_email">EMAIL</span><span class="v">entrol.artimov@gmail.com</span></span>
         <span class="blink"></span>
       </a>
       <a class="packet" href="tel:+37378970797" style="text-decoration:none">
         <span class="ico">☎</span>
-        <span class="meta"><span class="k">PHONE</span><span class="v">+373 789 70 797</span></span>
+        <span class="meta"><span class="k" data-i18n="comms_phone">PHONE</span><span class="v">+373 789 70 797</span></span>
         <span class="blink"></span>
       </a>
       <div class="packet">
         <span class="ico">⌖</span>
-        <span class="meta"><span class="k">LOCATION</span><span class="v">Chișinău, Moldova</span></span>
+        <span class="meta"><span class="k" data-i18n="comms_location">LOCATION</span><span class="v" data-i18n="comms_location_val">Chișinău, Moldova</span></span>
         <span class="blink"></span>
       </div>
     </div>
@@ -87,40 +92,40 @@
   <!-- ============ METRICS + TECH MATRIX ============ -->
   <section class="grid cols-2 mt reveal" data-rev>
     <div class="panel">
-      <div class="panel-head"><span class="tag">▤</span> CORE_METRICS // PROFICIENCY <span class="hline"></span><span class="idx">[01]</span></div>
+      <div class="panel-head" data-i18n-html="metrics_title"><span class="tag">▤</span> CORE_METRICS // PROFICIENCY <span class="hline"></span><span class="idx">[01]</span></div>
       <div id="metricWrap">
-        <div class="metric"><div class="m-top"><span class="m-name">JavaScript</span><span class="m-val">100% <span class="yr">· 8Y</span></span></div><div class="bar"><div class="fill" data-w="100"></div></div></div>
-        <div class="metric"><div class="m-top"><span class="m-name">HTML5</span><span class="m-val">100% <span class="yr">· 8Y</span></span></div><div class="bar"><div class="fill" data-w="100"></div></div></div>
-        <div class="metric"><div class="m-top"><span class="m-name">CSS3 / Responsive</span><span class="m-val">100% <span class="yr">· 8Y</span></span></div><div class="bar"><div class="fill" data-w="100"></div></div></div>
-        <div class="metric"><div class="m-top"><span class="m-name">Web Design</span><span class="m-val">100% <span class="yr">· 8Y</span></span></div><div class="bar"><div class="fill grad-amber" data-w="100"></div></div></div>
-        <div class="metric"><div class="m-top"><span class="m-name">Photoshop</span><span class="m-val">100% <span class="yr">· 8Y</span></span></div><div class="bar"><div class="fill grad-amber" data-w="100"></div></div></div>
-        <div class="metric"><div class="m-top"><span class="m-name">API Development</span><span class="m-val">75% <span class="yr">· 6Y</span></span></div><div class="bar"><div class="fill" data-w="75"></div></div></div>
+        <div class="metric"><div class="m-top"><span class="m-name" data-i18n="metric_js">JavaScript</span><span class="m-val">100% <span class="yr" data-i18n="yr_8">· 8Y</span></span></div><div class="bar"><div class="fill" data-w="100"></div></div></div>
+        <div class="metric"><div class="m-top"><span class="m-name" data-i18n="metric_html">HTML5</span><span class="m-val">100% <span class="yr" data-i18n="yr_8">· 8Y</span></span></div><div class="bar"><div class="fill" data-w="100"></div></div></div>
+        <div class="metric"><div class="m-top"><span class="m-name" data-i18n="metric_css">CSS3 / Responsive</span><span class="m-val">100% <span class="yr" data-i18n="yr_8">· 8Y</span></span></div><div class="bar"><div class="fill" data-w="100"></div></div></div>
+        <div class="metric"><div class="m-top"><span class="m-name" data-i18n="metric_design">Web Design</span><span class="m-val">100% <span class="yr" data-i18n="yr_8">· 8Y</span></span></div><div class="bar"><div class="fill grad-amber" data-w="100"></div></div></div>
+        <div class="metric"><div class="m-top"><span class="m-name" data-i18n="metric_photoshop">Photoshop</span><span class="m-val">100% <span class="yr" data-i18n="yr_8">· 8Y</span></span></div><div class="bar"><div class="fill grad-amber" data-w="100"></div></div></div>
+        <div class="metric"><div class="m-top"><span class="m-name" data-i18n="metric_api">API Development</span><span class="m-val">75% <span class="yr" data-i18n="yr_6">· 6Y</span></span></div><div class="bar"><div class="fill" data-w="75"></div></div></div>
       </div>
       <div class="counters">
-        <div class="counter"><div class="num" data-count="15">0</div><div class="lbl">Years Active</div></div>
-        <div class="counter"><div class="num" data-count="3">0</div><div class="lbl">Missions</div></div>
-        <div class="counter"><div class="num" data-count="3">0</div><div class="lbl">Languages</div></div>
+        <div class="counter"><div class="num" data-count="15">0</div><div class="lbl" data-i18n="metrics_years">Years Active</div></div>
+        <div class="counter"><div class="num" data-count="3">0</div><div class="lbl" data-i18n="metrics_missions">Missions</div></div>
+        <div class="counter"><div class="num" data-count="3">0</div><div class="lbl" data-i18n="metrics_languages">Languages</div></div>
       </div>
     </div>
 
     <div class="panel">
-      <div class="panel-head"><span class="tag">▦</span> TECH_MATRIX // STACK <span class="hline"></span><span class="idx">[02]</span></div>
+      <div class="panel-head" data-i18n-html="matrix_title"><span class="tag">▦</span> TECH_MATRIX // STACK <span class="hline"></span><span class="idx">[02]</span></div>
       <div class="matrix">
-        <div class="chip"><span class="c-n">Python</span><span class="c-t">BACKEND</span></div>
-        <div class="chip t-amber"><span class="c-n">PHP</span><span class="c-t">BACKEND</span></div>
-        <div class="chip t-amber"><span class="c-n">Laravel</span><span class="c-t">FRAMEWORK</span></div>
-        <div class="chip"><span class="c-n">Asyncio</span><span class="c-t">CONCURRENCY</span></div>
-        <div class="chip"><span class="c-n">Aiohttp</span><span class="c-t">ASYNC HTTP</span></div>
-        <div class="chip"><span class="c-n">React</span><span class="c-t">FRONTEND</span></div>
-        <div class="chip"><span class="c-n">REST API</span><span class="c-t">INTERFACE</span></div>
-        <div class="chip"><span class="c-n">OOP</span><span class="c-t">PARADIGM</span></div>
-        <div class="chip"><span class="c-n">MySQL</span><span class="c-t">DATABASE</span></div>
-        <div class="chip"><span class="c-n">Linux / Nginx</span><span class="c-t">SERVER ADMIN</span></div>
-        <div class="chip"><span class="c-n">Docker</span><span class="c-t">CONTAINER</span></div>
-        <div class="chip t-teal"><span class="c-n">Grafana</span><span class="c-t">MONITORING</span></div>
+        <div class="chip"><span class="c-n">Python</span><span class="c-t" data-i18n="tech_backend">BACKEND</span></div>
+        <div class="chip t-amber"><span class="c-n">PHP</span><span class="c-t" data-i18n="tech_backend">BACKEND</span></div>
+        <div class="chip t-amber"><span class="c-n">Laravel</span><span class="c-t" data-i18n="tech_framework">FRAMEWORK</span></div>
+        <div class="chip"><span class="c-n">Asyncio</span><span class="c-t" data-i18n="tech_concurrency">CONCURRENCY</span></div>
+        <div class="chip"><span class="c-n">Aiohttp</span><span class="c-t" data-i18n="tech_async_http">ASYNC HTTP</span></div>
+        <div class="chip"><span class="c-n">React</span><span class="c-t" data-i18n="tech_frontend">FRONTEND</span></div>
+        <div class="chip"><span class="c-n">REST API</span><span class="c-t" data-i18n="tech_interface">INTERFACE</span></div>
+        <div class="chip"><span class="c-n">OOP</span><span class="c-t" data-i18n="tech_paradigm">PARADIGM</span></div>
+        <div class="chip"><span class="c-n">MySQL</span><span class="c-t" data-i18n="tech_database">DATABASE</span></div>
+        <div class="chip"><span class="c-n">Linux / Nginx</span><span class="c-t" data-i18n="tech_server_admin">SERVER ADMIN</span></div>
+        <div class="chip"><span class="c-n">Docker</span><span class="c-t" data-i18n="tech_container">CONTAINER</span></div>
+        <div class="chip t-teal"><span class="c-n">Grafana</span><span class="c-t" data-i18n="tech_monitoring">MONITORING</span></div>
       </div>
       <div class="mt" style="font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.06em;line-height:1.7">
-        <span style="color:var(--teal)">▸</span> SECONDARY: jQuery · DataLife CMS · Excel/CSV · JIRA · DevTools · ServiceDesk KB
+        <span style="color:var(--teal)">▸</span> <span data-i18n="matrix_secondary">SECONDARY: jQuery · DataLife CMS · Excel/CSV · JIRA · DevTools · ServiceDesk KB</span>
       </div>
     </div>
   </section>
@@ -128,37 +133,37 @@
   <!-- ============ DIAGNOSTICS + LANGUAGES ============ -->
   <section class="grid cols-id mt reveal" data-rev>
     <div class="panel">
-      <div class="panel-head"><span class="tag">▥</span> UNDER_THE_HOOD // DIAGNOSTICS <span class="hline"></span><span class="idx">[03]</span></div>
+      <div class="panel-head" data-i18n-html="diagnostics_title"><span class="tag">▥</span> UNDER_THE_HOOD // DIAGNOSTICS <span class="hline"></span><span class="idx">[03]</span></div>
       <div class="log" id="diaglog">
-        <div class="line"><span class="ts">[ok]</span><span class="ok">PASS</span><span class="txt">Architecture built <b>from scratch</b> — clean, modular, self-designed</span></div>
-        <div class="line"><span class="ts">[ok]</span><span class="ok">PASS</span><span class="txt">OOP applied across <b>JavaScript · PHP · Python</b> with deep principle grasp</span></div>
-        <div class="line"><span class="ts">[ok]</span><span class="ok">PASS</span><span class="txt">Deep-dive <b>system debugging</b> — digging into internals to find the best path</span></div>
-        <div class="line"><span class="ts">[i ]</span><span class="info">INFO</span><span class="txt">Priority: <b>code clarity & optimization</b> over shortcuts</span></div>
-        <div class="line"><span class="ts">[i ]</span><span class="info">INFO</span><span class="txt">REST API + server-side logic · Linux admin (nginx, php, mysql, python)</span></div>
-        <div class="line"><span class="ts">[i ]</span><span class="info">INFO</span><span class="txt">Crypto automation — arbitrage, calculation & analysis scripts</span></div>
-        <div class="line"><span class="ts">[w ]</span><span class="warn">RDY </span><span class="txt">Rapidly onboards new tools · joins at any project stage</span></div>
+        <div class="line"><span class="ts">[ok]</span><span class="ok">PASS</span><span class="txt" data-i18n-html="diag_line1">Architecture built <b>from scratch</b> — clean, modular, self-designed</span></div>
+        <div class="line"><span class="ts">[ok]</span><span class="ok">PASS</span><span class="txt" data-i18n-html="diag_line2">OOP applied across <b>JavaScript · PHP · Python</b> with deep principle grasp</span></div>
+        <div class="line"><span class="ts">[ok]</span><span class="ok">PASS</span><span class="txt" data-i18n-html="diag_line3">Deep-dive <b>system debugging</b> — digging into internals to find the best path</span></div>
+        <div class="line"><span class="ts">[i ]</span><span class="info">INFO</span><span class="txt" data-i18n-html="diag_line4">Priority: <b>code clarity & optimization</b> over shortcuts</span></div>
+        <div class="line"><span class="ts">[i ]</span><span class="info">INFO</span><span class="txt" data-i18n="diag_line5">REST API + server-side logic · Linux admin (nginx, php, mysql, python)</span></div>
+        <div class="line"><span class="ts">[i ]</span><span class="info">INFO</span><span class="txt" data-i18n="diag_line6">Crypto automation — arbitrage, calculation & analysis scripts</span></div>
+        <div class="line"><span class="ts">[w ]</span><span class="warn">RDY </span><span class="txt" data-i18n="diag_line7">Rapidly onboards new tools · joins at any project stage</span></div>
         <div class="line cursor-line">root@mazur:~$ <span class="blk"></span></div>
       </div>
     </div>
 
     <div class="panel">
-      <div class="panel-head"><span class="tag">◭</span> LANGUAGE_PACKS <span class="hline"></span><span class="idx">[3]</span></div>
+      <div class="panel-head" data-i18n-html="lang_title"><span class="tag">◭</span> LANGUAGE_PACKS <span class="hline"></span><span class="idx">[3]</span></div>
       <div class="lang">
-        <div class="l-top"><span class="l-name">Russian</span><span class="l-lvl">NATIVE / FLUENT</span></div>
+        <div class="l-top"><span class="l-name" data-i18n="lang_ru">Russian</span><span class="l-lvl" data-i18n="lang_ru_lvl">NATIVE / FLUENT</span></div>
         <div class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
       </div>
       <div class="lang">
-        <div class="l-top"><span class="l-name">English</span><span class="l-lvl">BASIC</span></div>
+        <div class="l-top"><span class="l-name" data-i18n="lang_en">English</span><span class="l-lvl" data-i18n="lang_en_lvl">BASIC</span></div>
         <div class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
       </div>
       <div class="lang">
-        <div class="l-top"><span class="l-name">Romanian</span><span class="l-lvl">BASIC</span></div>
+        <div class="l-top"><span class="l-name" data-i18n="lang_ro">Romanian</span><span class="l-lvl" data-i18n="lang_ro_lvl">BASIC</span></div>
         <div class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
       </div>
       <div class="lang-meta mt">
-        <span class="ico">⌖</span><span>SECTOR</span><span>:</span><span>IT / Technology</span>
-        <span class="ico">◷</span><span>AVAIL</span><span>:</span><span>Open to engagement</span>
-        <span class="ico">⛁</span><span>MOBILITY</span><span>:</span><span>Cat.B license · own vehicle</span>
+        <span class="ico">⌖</span><span data-i18n="meta_sector">SECTOR</span><span>:</span><span data-i18n="meta_sector_val">IT / Technology</span>
+        <span class="ico">◷</span><span data-i18n="meta_avail">AVAIL</span><span>:</span><span data-i18n="meta_avail_val">Open to engagement</span>
+        <span class="ico">⛁</span><span data-i18n="meta_mobility">MOBILITY</span><span>:</span><span data-i18n="meta_mobility_val">Cat.B license · own vehicle</span>
       </div>
     </div>
   </section>
@@ -167,29 +172,29 @@
   <section class="mt reveal" data-rev>
     <div class="grid cols-mission">
       <div>
-        <div class="panel-head" style="margin-bottom:14px"><span class="tag">▶</span> MISSION_HISTORY // EXPERIENCE LOG <span class="hline"></span><span class="idx">[04]</span></div>
+        <div class="panel-head" style="margin-bottom:14px" data-i18n-html="experience_title"><span class="tag">▶</span> MISSION_HISTORY // EXPERIENCE LOG <span class="hline"></span><span class="idx">[04]</span></div>
         <div class="filters" id="filters">
-          <button class="filter active" data-f="all">All Ops</button>
-          <button class="filter" data-f="python">Python</button>
-          <button class="filter" data-f="php">PHP</button>
-          <button class="filter" data-f="frontend">Front-End</button>
+          <button class="filter active" data-f="all" data-i18n="experience_filter_all">All Ops</button>
+          <button class="filter" data-f="python" data-i18n="experience_filter_python">Python</button>
+          <button class="filter" data-f="php" data-i18n="experience_filter_php">PHP</button>
+          <button class="filter" data-f="frontend" data-i18n="experience_filter_frontend">Front-End</button>
         </div>
         <div class="timeline" id="timeline">
 
           <article class="mission" data-track="python">
             <div class="m-head">
               <div>
-                <div class="m-role">Python Developer</div>
-                <div class="m-org">FREELANCE · CHIȘINĂU</div>
+                <div class="m-role" data-i18n="experience_role_py">Python Developer</div>
+                <div class="m-org" data-i18n="experience_org_py">FREELANCE · CHIȘINĂU</div>
               </div>
-              <div class="m-date">DEC 2023 — PRESENT<span class="dur">1Y 9M · ACTIVE</span></div>
+              <div class="m-date" data-i18n-html="experience_date_py">DEC 2023 — PRESENT<span class="dur">1Y 9M · ACTIVE</span></div>
             </div>
             <ul class="m-body">
-              <li>Built & maintained Python backend tooling for live operations</li>
-              <li>Crypto APIs — real-time data collection & analysis</li>
-              <li>Async programming with <b style="color:var(--cyan-bright);font-weight:400">asyncio</b> &amp; <b style="color:var(--cyan-bright);font-weight:400">aiohttp</b></li>
-              <li>Blockchain networks — I/O logic & optimal-path routing</li>
-              <li>Linux server deploy (python, mysql) · monitoring &amp; logging</li>
+              <li data-i18n="exp_py_p1">Built & maintained Python backend tooling for live operations</li>
+              <li data-i18n="exp_py_p2">Crypto APIs — real-time data collection & analysis</li>
+              <li data-i18n-html="exp_py_p3">Async programming with <b style="color:var(--cyan-bright);font-weight:400">asyncio</b> &amp; <b style="color:var(--cyan-bright);font-weight:400">aiohttp</b></li>
+              <li data-i18n="exp_py_p4">Blockchain networks — I/O logic & optimal-path routing</li>
+              <li data-i18n="exp_py_p5">Linux server deploy (python, mysql) · monitoring &amp; logging</li>
             </ul>
             <div class="m-skills"><span>Asyncio</span><span>Aiohttp</span><span>API</span><span>Optimization</span><span>Python</span></div>
           </article>
@@ -197,17 +202,17 @@
           <article class="mission" data-track="php">
             <div class="m-head">
               <div>
-                <div class="m-role">PHP Developer</div>
-                <div class="m-org">FREELANCE · CHIȘINĂU</div>
+                <div class="m-role" data-i18n="experience_role_php">PHP Developer</div>
+                <div class="m-org" data-i18n="experience_org_php">FREELANCE · CHIȘINĂU</div>
               </div>
-              <div class="m-date">NOV 2018 — DEC 2023<span class="dur">5Y 1M</span></div>
+              <div class="m-date" data-i18n-html="experience_date_php">NOV 2018 — DEC 2023<span class="dur">5Y 1M</span></div>
             </div>
             <ul class="m-body">
-              <li>Built a custom advertising platform from scratch (PHP + JS)</li>
-              <li>Billing calculations, hierarchy systems, statistics &amp; user cabinets</li>
-              <li>PHP backend services · custom API services</li>
-              <li>Database work &amp; server config — Linux, nginx, MySQL</li>
-              <li>Ad creative, banners &amp; landing pages</li>
+              <li data-i18n="exp_php_p1">Built a custom advertising platform from scratch (PHP + JS)</li>
+              <li data-i18n="exp_php_p2">Billing calculations, hierarchy systems, statistics &amp; user cabinets</li>
+              <li data-i18n="exp_php_p3">PHP backend services · custom API services</li>
+              <li data-i18n="exp_php_p4">Database work &amp; server config — Linux, nginx, MySQL</li>
+              <li data-i18n="exp_php_p5">Ad creative, banners &amp; landing pages</li>
             </ul>
             <div class="m-skills"><span>PHP</span><span>JS</span><span>API</span><span>MySQL</span><span>Linux</span><span>Development</span></div>
           </article>
@@ -215,17 +220,17 @@
           <article class="mission" data-track="frontend">
             <div class="m-head">
               <div>
-                <div class="m-role">Front-End Developer &amp; UI Designer</div>
-                <div class="m-org">FREELANCE · CHIȘINĂU</div>
+                <div class="m-role" data-i18n="experience_role_fe">Front-End Developer &amp; UI Designer</div>
+                <div class="m-org" data-i18n="experience_org_fe">FREELANCE · CHIȘINĂU</div>
               </div>
-              <div class="m-date">MAR 2010 — NOV 2018<span class="dur">8Y 9M</span></div>
+              <div class="m-date" data-i18n-html="experience_date_fe">MAR 2010 — NOV 2018<span class="dur">8Y 9M</span></div>
             </div>
             <ul class="m-body">
-              <li>Built sites &amp; CMS templates (incl. DataLife Engine)</li>
-              <li>HTML, CSS — cross-browser responsive layout</li>
-              <li>Photoshop — mockups, logos, banners &amp; graphics</li>
-              <li>Early JavaScript &amp; jQuery interactivity</li>
-              <li>Direct client comms &amp; end-to-end project delivery</li>
+              <li data-i18n="exp_fe_p1">Built sites &amp; CMS templates (incl. DataLife Engine)</li>
+              <li data-i18n="exp_fe_p2">HTML, CSS — cross-browser responsive layout</li>
+              <li data-i18n="exp_fe_p3">Photoshop — mockups, logos, banners &amp; graphics</li>
+              <li data-i18n="exp_fe_p4">Early JavaScript &amp; jQuery interactivity</li>
+              <li data-i18n="exp_fe_p5">Direct client comms &amp; end-to-end project delivery</li>
             </ul>
             <div class="m-skills"><span>Web Design</span><span>Photoshop</span><span>JavaScript</span><span>CSS3</span><span>HTML5</span></div>
           </article>
@@ -235,7 +240,7 @@
 
       <!-- telemetry -->
       <div class="panel telemetry" style="align-self:start">
-        <div class="panel-head"><span class="tag">◈</span> TELEMETRY <span class="hline"></span><span class="idx" id="teleTag">ALL</span></div>
+        <div class="panel-head" data-i18n-html="telemetry_title"><span class="tag">◈</span> TELEMETRY <span class="hline"></span><span class="idx" id="teleTag">ALL</span></div>
         <div id="teleBars"></div>
         <div class="radar-note" id="teleNote"></div>
       </div>
@@ -244,8 +249,8 @@
 
   <!-- ============ FOOTER ============ -->
   <div class="foot">
-    <span>© 2026 ARTEM_MAZUR // FULL-STACK DEV · ALL SYSTEMS NOMINAL</span>
-    <span>SOURCE: <a href="https://www.rabota.md/ru/resume/it/479789" target="_blank" rel="noopener">rabota.md/479789</a></span>
+    <span data-i18n="foot_text">© 2026 ARTEM_MAZUR // FULL-STACK DEV · ALL SYSTEMS NOMINAL</span>
+    <span><span data-i18n="foot_source">SOURCE: </span><a href="https://www.rabota.md/ru/resume/it/479789" target="_blank" rel="noopener">rabota.md/479789</a></span>
   </div>
 
 </div>
