@@ -169,12 +169,19 @@ document.getElementById('bootskip').addEventListener('click', finishBoot);
 window.addEventListener('keydown', e=>{ if(e.key==='Escape') finishBoot(); });
 
 /* ============ LOCALIZATION HANDLER ============ */
+let latestLang = currentLang;
 async function setLanguage(lang) {
+  latestLang = lang;
+  
+  const translations = await loadLanguage(lang);
+  
+  if (latestLang !== lang) {
+    return;
+  }
+  
   currentLang = lang;
   localStorage.setItem('lang', lang);
   document.documentElement.lang = lang;
-  
-  const translations = await loadLanguage(lang);
   
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
