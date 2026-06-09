@@ -130,6 +130,18 @@ body{
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .topbar {
+    gap: 8px;
+    padding: 8px 12px;
+  }
+  .topbar .os {
+    font-size: 11px;
+  }
+  .topbar #clock {
+    display: none;
+  }
+}
 
 /* ---------- panels ---------- */
 .panel{
